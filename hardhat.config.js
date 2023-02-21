@@ -1,9 +1,11 @@
 require("@nomiclabs/hardhat-waffle")
-require("hardhat-gas-reporter")
 require("@nomiclabs/hardhat-etherscan")
 require("dotenv").config()
-require("solidity-coverage")
 require("hardhat-deploy")
+require("@nomicfoundation/hardhat-chai-matchers")
+
+// require("hardhat-gas-reporter")
+// require("solidity-coverage")
 // require("hardhat-storage-layout")
 // require("@nomicfoundation/hardhat-toolbox")
 // require("@openzeppelin/hardhat-upgrades")
