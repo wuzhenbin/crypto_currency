@@ -5,9 +5,8 @@ require("dotenv").config()
 require("solidity-coverage")
 require("hardhat-deploy")
 // require("hardhat-storage-layout")
-
-require("@nomicfoundation/hardhat-toolbox")
-require("@openzeppelin/hardhat-upgrades")
+// require("@nomicfoundation/hardhat-toolbox")
+// require("@openzeppelin/hardhat-upgrades")
 
 // const PRIVATE_KEY = process.env.PRIVATE_KEY
 // const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
