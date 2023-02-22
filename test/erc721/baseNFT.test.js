@@ -1,5 +1,3 @@
-// We are going to skip a bit on these tests...
-
 const { assert } = require("chai")
 const { network, deployments, ethers } = require("hardhat")
 const { developmentChains } = require("../../helper-hardhat-config")
@@ -43,8 +41,8 @@ if (!developmentChains.includes(network.name)) {
             it("Show the correct balance and owner of an NFT", async function () {
                 const deployerBalance = await basicNft.balanceOf(owner.address)
                 // nft owner
-                assert.equal(deployerBalance.toString(), "1")
-                assert.equal(await basicNft.ownerOf("0"), owner.address)
+                expect(deployerBalance.toString()).to.equal("1")
+                expect(await basicNft.ownerOf("0")).to.equal(owner.address)
             })
         })
     })
