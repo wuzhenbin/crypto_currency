@@ -7,3 +7,4 @@ hh test test/erc20/tokenVestings.test.js
 hh test test/erc721/baseNFT.test.js
 hh test test/erc721/svgNFT.test.js
 hh test test/erc721/dutchAuction.test.js
+hh test test/erc721/englishAuction.test.js

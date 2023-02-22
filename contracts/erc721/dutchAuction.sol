@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "hardhat/console.sol";
+// import "hardhat/console.sol";
 
 error DutchAuction__OverAmount();
 error DutchAuction__NeedMoreETH();

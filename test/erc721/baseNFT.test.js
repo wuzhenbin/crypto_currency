@@ -13,7 +13,6 @@ if (!developmentChains.includes(network.name)) {
         beforeEach(async () => {
             ;[owner, user1, user2, user3] = await ethers.getSigners()
 
-            // deploy faucet
             const NFTContract = await ethers.getContractFactory("BasicNft")
             basicNft = await NFTContract.deploy("Dogie", "DOG")
         })
