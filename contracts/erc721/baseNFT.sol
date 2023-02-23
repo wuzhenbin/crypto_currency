@@ -20,6 +20,17 @@ contract BasicNft is ERC721 {
         s_tokenCounter = s_tokenCounter + 1;
     }
 
+    function mintMultNft(uint256 numberOfNfts) public payable {
+        //检查numberOfNFT在(0,20]
+        require(numberOfNfts > 0 && numberOfNfts <= 20);
+
+        //执行for循环, 每个循环里都触发mint一次, 写入一个全局变量
+        for (uint i = 0; i < numberOfNfts; i++) {
+            _safeMint(msg.sender, s_tokenCounter);
+            s_tokenCounter = s_tokenCounter + 1;
+        }
+    }
+
     function tokenURI(
         uint256 /* tokenId */
     ) public pure override returns (string memory) {
