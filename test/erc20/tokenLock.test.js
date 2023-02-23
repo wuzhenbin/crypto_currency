@@ -9,7 +9,7 @@ const getBalance = ethers.provider.getBalance
 if (!developmentChains.includes(network.name)) {
     describe.skip
 } else {
-    describe("Faucet Unit Tests", function () {
+    describe("TokenLock Unit Tests", function () {
         let owner, user1, Token, TokenLock
         beforeEach(async () => {
             ;[owner, user1] = await ethers.getSigners()
