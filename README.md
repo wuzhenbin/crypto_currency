@@ -12,3 +12,5 @@ hh test test/erc721/merkleTreeNFT.test.js
 hh test test/erc721/signatureNft.test.js
 hh test test/erc721/nftSwap.test.js
 hh test test/erc721a/myMint.test.js
+
+hh test test/erc1155/rockPaperScissors.test.js
