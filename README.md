@@ -9,3 +9,4 @@ hh test test/erc721/svgNFT.test.js
 hh test test/erc721/dutchAuction.test.js
 hh test test/erc721/englishAuction.test.js
 hh test test/erc721/merkleTreeNFT.test.js
+hh test test/erc721/signatureNft.test.js
